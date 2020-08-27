@@ -14,11 +14,12 @@
               Iniciar Sesion
             </h3>
             <div class = "bordedContainer">
-              <input class="form-control marbo15" type="email" placeholder="Ingrese Email">
-              <input class="form-control marbo15" type="password" placeholder="Ingrese Contraseña">
+              <input [(ngModel)]="email" class="form-control marbo15" type="email" placeholder="Ingrese Email">
+              <input [(ngModel)]="pass" class="form-control marbo15" type="password" placeholder="Ingrese Contraseña">
             </div>
             <div class="center marbo15">
-              <button type="button" class="btn btn-outline-dark">Inicias Sesion</button>
+              <button type="button" class="btn btn-outline-dark" (click)="loggin()">Iniciar Sesion</button>
+              <button type="button" class="btn btn-outline-dark" (click)="logginFacebook()">Iniciar Sesion con Facebook</button>
             <div class="center marto30">
               <h4>
                   If you don't have an account click <a routerLink = "/registry">here</a>
